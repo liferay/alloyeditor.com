@@ -1,0 +1,109 @@
+$accent: #7CC3E1;
+
+@import "marble";
+
+// Root
+@import "templates/root";
+
+// Landing
+@import "templates/landing";
+
+// Docs
+@import "templates/docs";
+
+// Search
+@import "templates/search";
+
+// Updates
+@import "templates/updates";
+
+// Blog
+@import "templates/blog";
+
+// Tutorial
+@import "templates/tutorial";
+
+
+.topbar-invert, .content .sidebar-offset .topbar {
+	background-color: $accent;
+
+	.topbar-list .topbar-item {
+		.topbar-link {
+			color: #FFF;
+		}
+
+		&.active .topbar-link {
+			color: rgba(255, 255, 255, 0.8);
+		}
+	}
+}
+
+.highlight-title {
+
+}
+
+.features {
+	background-color: rgba(14, 20, 26, 0.02);
+}
+
+.header-hero {
+	background-color: $accent;
+	background-image: url("/images/banner_back.png");
+	background-position: bottom center;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	color: #FFF;
+	padding: 20px 0 160px;
+
+	@media (min-width: $screen-md) {
+		padding: 200px 0 320px;
+	}
+
+	h1, h2 {
+		font-weight: lighter;
+	}
+
+	h1 {
+		font-size: 46px;
+
+		@media (min-width: $screen-md) {
+			font-size: 80px;
+		}
+	}
+
+	h3 {
+		margin-bottom: 60px;
+	}
+
+	.container {
+		max-width: 800px;
+	}
+}
+
+.topbar-logo img {
+	max-height: 40px;
+}
+
+.about-description, .about-title {
+	&, & a {
+		color: #000;
+	}
+}
+
+.container-alloyeditor {
+	background-color: rgba(14, 20, 26, 0.8);
+
+	-moz-box-shadow: 17px 14px 50px 10px rgba(0, 0, 0, 0.1);
+	-webkit-box-shadow: 17px 14px 50px 10px rgba(0, 0, 0, 0.1);
+	box-shadow: 17px 14px 50px 10px rgba(0, 0, 0, 0.1);
+}
+
+.container-fluid-960 {
+	background-color: #FFF;
+	max-width: 960px;
+	padding: 60px 40px;
+
+	@media (min-width: $screen-md) {
+		padding: 120px 40px;
+	}
+}

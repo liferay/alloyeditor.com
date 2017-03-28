@@ -1,0 +1,14 @@
+{namespace Demo}
+
+/**
+ * This renders the component's whole content.
+ * @param divId
+ * @param? contentHtml
+ */
+{template .render}
+	<div id="{$divId}" contenteditable="true" data-placeholder="Write content here">
+		{if $contentHtml}
+			{$contentHtml}
+		{/if}
+    </div>
+{/template}

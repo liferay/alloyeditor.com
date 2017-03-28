@@ -1,0 +1,516 @@
+---
+title: Updates
+description: Updates description.
+updates:
+ -
+  version: 1.2.4
+  major: false
+  features:
+   -
+    icon: bugs
+    title: Bugfixes and enhancements
+    description: "Various bugfixes and enhancements: Fixed toolbar rendering issues, button style documentation, images resizing in Firefox, passing link targets button config ButtonTargetList."
+    url: https://github.com/liferay/alloy-editor/issues?q=milestone%3A1.2.4+label%3Abug
+ -
+  major: false
+  version: 1.2.3
+
+  features:
+  -
+    icon: bugs
+    title: Properly release resources
+    description: Fixed issue with detaching events registered via CKEditor's API. The issue would cause the following exception on destroying the editor "Uncaught TypeError Cannot read property 'getRanges' of null". Fixed an issue that would cause the image resize markers to be still present even when the editor was destroyed.
+    url: https://github.com/liferay/alloy-editor/issues?q=milestone%3A1.2.3+label%3Abug
+  -
+    icon: api
+    title: Fire `beforeImageAdd` event in buttom-image too
+    description: ButtonImage will fire `beforeImageAdd` event too
+    url: https://github.com/liferay/alloy-editor/issues/534
+ -
+  major: false
+  version: 1.2.2
+
+  features:
+  -
+    icon: bugs
+    title: Properly position embedded media toolbar
+    description: If page is scrolled, the embedded media toolbar will be positioned improperly. To fix that, scrollTop and scrollLeft properties were involved in toobar's position calculation.
+    url: https://github.com/liferay/alloy-editor/issues/526
+ -
+  major: false
+  version: 1.2.1
+
+  features:
+  -
+    icon: bugs
+    title: Improve embedding media
+    description: Embedding media has been improved and now it allows removal of the widgets using the keyboard. In addition, a new button has been added, which allows trashing embedded content.
+    url: https://github.com/liferay/alloy-editor/issues/517
+  -
+    icon: ckeditor
+    title: CKEditor was updated to v4.5.9
+    description: CKEditor was updated to v4.5.9 and a bug, which was preventing the usage of CKEditor buttons in multiple AlloyEditor instances was fixed.
+    url: https://github.com/liferay/alloy-editor/issues/515
+  -
+    icon: buttons
+    title: Convert mail link
+    description: The button for adding link has been improved and now it recognizes mail links. Entering `me@example.com` will be converted to  `mailto:me@example.com`. Thanks to <a href="https://github.com/mattleff">Matthew Leffler</a> for his awesome contribution!
+    url: https://github.com/liferay/alloy-editor/issues/522
+  -
+    icon: api
+    title: Adding images fires `beforeImageAdd` event
+    description: On adding images via paste or Drag&amp;Drop, before to append the image to the content, a `beforeImageAdd` event will be fired. The developer may subscribe to it and cancel it, this will prevent adding the image to the content.
+    url: https://github.com/liferay/alloy-editor/issues/518
+ -
+  major: true
+  version: 1.2.0
+
+  features:
+  -
+    icon: buttons
+    title: New buttons and plugins
+    description: Added two new buttons - "indent" and "outdent". See how they work <a href="/features/indent-outdent/">here</a>. Added a plugin to create automatically ordered and unordered lists. You can see it in action <a href="/features/autolist/">here</a>.
+    url: https://github.com/liferay/alloy-editor/issues?q=milestone%3A1.2.0+label%3A%22Feature+request%22
+  -
+    icon: accessibility
+    title: Accessibility and UX improvements
+    description: Added support for keyboard navigation in link autocomplete. Table removing icon was changed.
+    url: https://github.com/liferay/alloy-editor/issues?q=milestone%3A1.2.0+label%3Aenhancement
+ -
+  major: true
+  version: 1.1.0
+
+  features:
+  -
+    icon: api
+    title: A new way for configuring the buttons
+    description: A single button can be configured without the requirement the whole toolbars configuration to be overwritten too. For that purpose, there is a new configuration property, called <strong>buttonCfg</strong>.
+    url: /guides/button_configuration/
+  -
+    icon: buttons
+    title: Adding links via AutoComplete
+    description: The user is now able to add links using AutoComplete. This feature was contributed by <a href="https://github.com/mattleff">Matthew Leffler</a>.
+    url: /features/linkautocomplete/
+  -
+    icon: bugs
+    title: Fixed numerous bugs
+    description: A number of bugs have been fixed, most of them related to the usability of the editor.
+    url: https://github.com/liferay/alloy-editor/issues?q=milestone%3A1.1.0+label%3Abug
+ -
+  major: true
+  version: 1.0.0
+
+  features:
+  -
+    icon: api
+    title: The API reached a stable version
+    description: After almost two years of releasing versions below 1.0, the moment for releasing a stable version of the API has arrived. Since v.1.0.0 the established ways of communicating with CKEditor's engine, emitting events and receiving properties will be locked. Version 1.0 guarantees stability and full backward compatibility in all further 1.x releases.
+  -
+    icon: buttons
+    title: A new button for embedding media
+    description: AlloyEditor is now able to embed media files such as videos, tweets and presentations and many others. The service is provided by <a href="https://iframely.com">IFramely</a>, which means you will be able to embed content for huge set of domains. Please refer to their page for more information and terms of usage.
+    url: https://github.com/liferay/alloy-editor/issues/233
+  -
+    icon: accessibility
+    title: Cmd-L opens the Link Dialog
+    description: Adding a link is now possible directly from the keyboard by pressing Cmd-L (or Ctrl-L in Windows).
+    url: https://github.com/liferay/alloy-editor/issues/417
+  -
+    icon: bugs
+    title: Fixed numerous bugs
+    description: A number of bugs have been fixed, most of them related to the usability of the editor.
+    url: https://github.com/liferay/alloy-editor/issues?q=milestone%3A1.0.0+label%3Abug
+ -
+  version: 0.7.5
+
+  features:
+  -
+    icon: bugs
+    title: Bug Fixes
+    description: Properly <a href="https://github.com/liferay/alloy-editor/issues/413">updated</a> bower package with AlloyEditor version.
+ -
+  version: 0.7.4
+
+  features:
+  -
+    icon: bugs
+    title: Bug Fixes
+    description: Fixed an <a href="https://github.com/liferay/alloy-editor/issues/410">issue</a> with detecting user language. <a href="https://github.com/liferay/alloy-editor/issues/411">Replaced</a> `minify-css` package (it has been deprecated) with `cssnano`.
+ -
+  version: 0.7.3
+
+  features:
+  -
+    icon: bugs
+    title: Bug Fixes
+    description: Fixed an <a href="https://github.com/liferay/alloy-editor/issues/408">issue</a> with requiring AlloyEditor on the server. On the server, when requiring `alloyeditor`, the default script will be now `alloy-editor-no-react.js`.
+  -
+    icon: api
+    title: Guide
+    description: Created a <a href="http://alloyeditor.com/guides/react_component">guide</a>, which shows how to create a React component and render the content on the server and to create an instance of AlloyEditor in the browser.
+ -
+  version: 0.7.2
+
+  features:
+  -
+    icon: bugs
+    title: Bug Fixes
+    description: If React is not defined on the global space, AlloyEditor will try to <a href="https://github.com/liferay/alloy-editor/issues/406">require</a> it via the `require` function.
+ -
+  version: 0.7.1
+
+  features:
+  -
+    icon: buttons
+    title: Link creating button is now able to set link target
+    description: When user creates or edits a link, now there is a possibility to set link's target (blank, self, etc)
+    url: https://github.com/liferay/alloy-editor/issues/344
+  -
+    icon: buttons
+    title: Link creating button advances the cursor after the created link
+    description: After creating a link, the cursor will be advanced after the link. This provides better UX.
+    url: https://github.com/liferay/alloy-editor/issues/128
+  -
+    icon: ckeditor
+    title: Updated to CKEditor's engine 4.5.5
+    description: CKEDIOR's engine has been updated to 4.5.5, which fixes an issue with destroying CKEDITOR's instance immediately after creation.
+    url: https://github.com/liferay/alloy-editor/issues/375
+  -
+    icon: bugs
+    title: Bug Fixes
+    description: Fixed an <a href="https://github.com/liferay/alloy-editor/issues/375">issue</a> with destroying the instance of the editor too early, fixed an <a href="https://github.com/liferay/alloy-editor/issues/379">issue</a> with initializing AlloyEditor's plugins when CKEditor's are present
+  -
+    icon: api
+    title: New <i>autolinkAdd</i> event
+    description: A new event, called <i>autolinkAdd</i> will be fired when AlloyEditor creates a link automatically
+    url: https://github.com/liferay/alloy-editor/issues/388
+  -
+    icon: api
+    title: YUI's UI removed
+    description: In this version the old YUI UI has been completely removed.
+    url: https://github.com/liferay/alloy-editor/issues/247
+ -
+  major: true
+  version: 0.7.0
+
+  features:
+   -
+    icon: api
+    title: Supports React 0.14
+    description: AlloyEditor has been <a href="https://github.com/liferay/alloy-editor/issues/365">updated</a> to support React 0.14 and the separation between React and ReactDOM.
+   -
+    icon: packaging
+    title: Works in GitHub Electron
+    description: After heavily <a href="https://github.com/liferay/alloy-editor/issues/350">discussing</a> all the possibilities to make it working with Electron, we finally did it! Since version 0.7, AlloyEditor loads fine in Electron.
+   -
+    icon: packaging
+    title: Works with Browserify
+    description: Another highly requested feature was to make it <a href="https://github.com/liferay/alloy-editor/issues/338">working</a> with Browserify. This became possible in version 0.7
+   -
+    icon: api
+    title: New <em>editorUpdate</em> event
+    description: AlloyEditor now <a href="https://github.com/liferay/alloy-editor/issues/366">notifies</a> the outside world about state changes so other non-react apps could be seamlessly integrated.
+   -
+    icon: bugs
+    title: Bug Fixes
+    description: Some bugfixes and improvements like <a href="https://github.com/liferay/alloy-editor/issues/181">centering</a> the toolbar when the selection is an image or a table, <a href="https://github.com/liferay/alloy-editor/issues/371">hiding</a> the toolbars after destroying and recreating the editor.
+ -
+  major: true
+  version: 0.6.0
+
+  features:
+   -
+    icon: buttons
+    title: Image centering
+    description: Adds a new <a href="https://github.com/liferay/alloy-editor/issues/322">button</a> for centering images. This button was contributed by <a href="https://github.com/ejfrancis">Evan Francis</a> (thanks!)
+    url: /features/imagealigncenter
+   -
+    icon: bugs
+    title: Bug Fixes
+    description: Fixes issues related to keeping the toolbar in the view and <a href="https://github.com/liferay/alloy-editor/pull/356">handling</a> contenteditable property on destroying the editor. Thanks to <a href="https://github.com/dpobel">Damien Pobel</a> and <a href="https://github.com/mattleff">Matthew Leffler</a> for the contributions!
+ -
+  version: 0.5.2
+
+  features:
+   -
+    icon: bugs
+    title: Bug Fixes
+    description: Fixes an <a href="https://github.com/liferay/alloy-editor/issues/333">issue</a> with using non-bundled version of React
+ -
+  version: 0.5.1
+
+  features:
+   -
+    icon: bugs
+    title: Bug Fixes
+    description: Fixes an <a href="https://github.com/liferay/alloy-editor/issues/329">issue</a> with the minimized dist files
+   -
+    icon: api
+    title: Documentation updates
+    description: Properly <a href="https://github.com/liferay/alloy-editor/issues/331">documents</a> the regexBasePath property in AlloyEditor class
+ -
+  major: true
+  version: 0.5.0
+
+  features:
+   -
+    icon: server
+    title: AlloyEditor On The Server
+    description: AlloyEditor can now be used safely in Node.js environments
+   -
+    icon: bugs
+    title: Bug Fixes
+    description: Fixes an <a href="https://github.com/liferay/alloy-editor/issues/325">issue</a> regarding errors if the editor has no focus
+ -
+  version: 0.4.1
+
+  features:
+   -
+    icon: packaging
+    title: Better npm Packaging
+    description: Better compliance with npm packaging. Added main attribute
+ -
+  major: true
+  version: 0.4.0
+
+  features:
+   -
+    icon: ckeditor
+    title: CKEditor Plugin Support
+    description: You can now use almost every CKEditor plugin out of the box!
+    url: /guides/how_to_use_ckeditor_plugins
+   -
+    icon: skins
+    title: Improved Skin Infrastructure
+    description: Creates a new skin infrastructure, more extensible and component-based
+   -
+    icon: skins
+    title: Atlas Skin
+    description: Adds a new <stront>Atlas</stront> skin
+   -
+    icon: bugs
+    title: Bug Fixes
+    description: Fixes several issues
+   -
+    icon: ckeditor
+    title: CKEditor 4.5.1
+    description: Updates to the latest CKEditor version
+    url: http://ckeditor.com/blog/CKEditor-4.5-Released
+ -
+  version: 0.3.7
+
+  features:
+   -
+    icon: bugs
+    title: Bug Fixes
+    description: Fixes an issue relating to the image button
+ -
+  version: 0.3.6
+
+  features:
+   -
+    icon: skins
+    title: Simpler CSS Prefix
+    description: Simplifies css <em>alloy-editor</em> prefix to use <em>ae</em> instead
+ -
+  version: 0.3.5
+
+  features:
+   -
+    icon: buttons
+    title: Table Headings
+    description: Adds support and a new button to control the heading style inside a table
+    url: /features/tableheading
+   -
+    icon: packaging
+    title: Editor Version
+    description: You can now easily check the editor version being used
+   -
+    icon: bugs
+    title: Bug Fixes
+    description: Fixes issues relating to the UI disappearing in some scenarios
+   -
+    icon: build
+    title: Better Language Support
+    description: It is now possible to incrementally update lang files
+ -
+  version: 0.3.4
+
+  features:
+   -
+    icon: tests
+    title: Better Test Infrastructure
+    description: Improves test infrastructure and adds new tests
+   -
+    icon: build
+    title: Compiled With Babel
+    description: AlloyEditor React UI is now compiled using Babel
+ -
+  version: 0.3.2
+
+  features:
+   -
+    icon: bugs
+    title: Bug Fixes
+    description: Fixes several issues relating to API and CSS undesired effects
+   -
+    icon: packaging
+    title: Updated Dependencies
+    description: Updates project dependencies and adds a breaking changes file
+   -
+    icon: skins
+    title: Improved Skin Infrastructure
+    description: Separates color and font definitions to a different file
+ -
+  version: 0.3.1
+
+  features:
+   -
+    icon: packaging
+    title: Bower Component
+    description: AlloyEditor is now published as a Bower Component
+ -
+  major: true
+  version: 0.3.0
+
+  features:
+   -
+    icon: buttons
+    title: Paste Images
+    description: You can now paste images directly from your clipboard!
+   -
+    icon: packaging
+    title: Simpler Distribution Folder
+    description: Simplifies the distribution folder structure
+ -
+  version: 0.2.9
+
+  features:
+   -
+    icon: bugs
+    title: Bug Fixes
+    description: Fixes an issue where the editor does not set <small><code>contenteditable</code></small> properly
+ -
+  version: 0.2.8
+
+  features:
+   -
+    icon: internationalization
+    title: Internationalization Support
+    description: You can now use AlloyEditor in your own language
+   -
+    icon: accessibility
+    title: Screen Reader Support
+    description: Improves support for screen readers
+   -
+    icon: bugs
+    title: Bug Fixes
+    description: Fixes several issues regarding to inconsistent UI behaviours
+ -
+  version: 0.2.7
+
+  features:
+   -
+    icon: bugs
+    title: Bug Fixes
+    description: Fixes an issue regarding to the toolbar position when using Bootstrap
+   -
+    icon: tests
+    title: Travis & SauceLabs
+    description: Updates SauceLabs configuration to properly connect with Travis
+ -
+  version: 0.2.6
+
+  features:
+   -
+    icon: skins
+    title: React UI
+    description: Adds a new default UI based on React
+   -
+    icon: buttons
+    title: Tables, Styles, Images&hellip;
+    description: Introduces many new buttons to add tables, styles, images from camera&hellip;
+    url: /
+ -
+  version: 0.2.5
+
+  features:
+   -
+    icon: bugs
+    title: Bug Fixes
+    description: Fixes an issue regarding pasting content
+ -
+  version: 0.2.4
+
+  features:
+   -
+    icon: api
+    title: Image Drop
+    description: You can now directly use the generated dom element after dropping an image
+   -
+    icon: api
+    title: Debounce Detach
+    description: Renames the cancel method in <small><code>Debounce</code></small> to <strong>detach</strong> instead
+   -
+    icon: ckeditor
+    title: CKEditor 4.4.5
+    description: Updates to the latest CKEditor version
+    url: http://ckeditor.com/blog/CKEditor-4.4.5-Released
+ -
+  version: 0.2.3
+
+  features:
+   -
+    icon: accessibility
+    title: ARIA and Keyboard Support
+    description: Adds basic ARIA and keyboard support for toolbars and buttons
+ -
+  version: 0.2.2
+
+  features:
+   -
+    icon: skins
+    title: Skin support
+    description: You can now create and use different skins
+   -
+    icon: api
+    title: Button Configuration
+    description: Allows buttons to receive complex configuration objects
+   -
+    icon: bugs
+    title: Bug Fixes
+    description: Fixes several issues
+ -
+  version: 0.2.1
+
+  features:
+   -
+    icon: license
+    title: LGPL license
+    description: AlloyEditor is now licensed under LGPL instead of MIT
+---
+
+{namespace updatesIndex}
+
+/**
+ * @param page
+ */
+{template .render}
+  {call main.render data="all"}
+    {param content kind="html"}
+      <div>
+        <header class="header">
+          <div class="container">
+            <h1 class="header-title">Updates</h1>
+
+            <h1 class="header-subtitle">Check out what's new.</h1>
+          </div>
+        </header>
+
+        {call ElectricUpdates.render}
+          {param updates: $page.updates /}
+        {/call}
+      </div>
+    {/param}
+  {/call}
+{/template}

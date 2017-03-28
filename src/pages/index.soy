@@ -1,0 +1,134 @@
+---
+title: "Home"
+description: "a modern WYSIWYG editor built on top of CKEDITOR, designed to create modern and gorgeous web content"
+---
+
+{namespace pageIndex}
+
+/**
+ * @param site
+ */
+{template .render}
+	{call main.render data="all"}
+		{param content kind="html"}
+			{call .header data="all" /}
+			{call .demo /}
+			{call .highlights /}
+			{call .testimonial /}
+			{call .footer /}
+		{/param}
+	{/call}
+{/template}
+
+/**
+ * @param site
+ */
+{template .header}
+	<header class="header header-hero">
+		<div class="container">
+			<h1 class="header-title">ALLOY<strong>EDITOR</strong></h1>
+			<h2 class="header-subtitle">{$site.index.description}</h2>
+			<h3>Supported browsers: IE9+  -  Edge  -  Chrome  -  Firefox  -  Safari</h3>
+			<div class="header-cta">
+				<a href="#" class="btn btn-primary">GET STARTED</a>
+				<a href="#" class="btn btn-default">DOWNLOAD (1.3.1)</a>
+			</div>
+		</div>
+	</header>
+{/template}
+
+/**
+ *
+ */
+{template .demo}
+	<div class="container-alloyeditor">
+		<div class="container-fluid container-fluid-960">
+			{call Demo.render}
+				{param divId: 'why' /}
+				{param contentHtml kind="html"}
+					<div class="col-md-16">
+						<h3 class="highlight-title">In live demo, click/touch here</h3>
+						<p class="highlight-description">Throug the WHY, a story will arise, which will create trust and make an idea, a service, or a project uniqu. <strong>As Simon Sinek has said</strong>, having loyal users is all about attracting the people who share <u>your fundamental beliefs</u>. Remember: <cite>People don't buy what you do</cite>. They buy why you do it. I'll say it again: People don't buy what you do. They buy why you do it.</p>
+					</div>
+				{/param}
+			{/call}
+		</div>
+	</div>
+{/template}
+
+/**
+ *
+ */
+{template .highlights}
+	<div class="highlights">
+		<div class="container">
+			<section class="highlight row">
+				<div class="col-md-6 col-md-offset-2">
+					<h3 class="highlight-title">The core is separated from the UI</h3>
+					<p class="highlight-description">The main idea behind the editor is to fully separate the core from the UI. And not only to separate it, but to allow people to easily add new Buttons and Toolbars or event to create a completely new UI based on a different Framework or even vanilla JavaScript.</p>
+					<p class="highlight-description">The core AlloyEditor uses CKEditor under the hood to deal with the editable content.This means the existing CKEditor plugins can be reused.</p>
+				</div>
+				<div class="col-md-5 col-md-offset-1">
+					<img class="highlight-image" src="/images/features_ui.png">
+				</div>
+			</section>
+			<section class="highlight row">
+				<div class="col-md-6 col-md-push-9">
+					<h3 class="highlight-title">So many things to do!</h3>
+					<p class="highlight-description">AlloyEditor comes out of the box with as much editing power as you'll probably ever need, but we plan to keep on adding new features so you can edit your content in any way you can imagine.</p>
+					<p class="highlight-description">Community Powered In addition to the out of the box options, AlloyEditor you can easily leverage any of the existing functionality and plugins developed for CKEditor.</p>
+				</div>
+				<div class="col-md-5 col-md-offset-2 col-md-pull-6">
+					<img class="highlight-image" src="/images/features_estanterias.png">
+				</div>
+			</section>
+			<section class="highlight row">
+				<div class="col-md-6 col-md-offset-2">
+					<h3 class="highlight-title">We <span class="icon-16-heart-full"></span> Writing</h3>
+					<p class="highlight-description">In the AlloyEditor team, we believe the content is the king, and so, we want to create a simple user interface where what you write is all that really matters.</p>
+					<p class="highlight-description">After years of suffering bloated and outdated user interfaces, AlloyEditor will turn any Web editing moment into a peaceful experience.</p>
+				</div>
+				<div class="col-md-5 col-md-offset-1">
+					<img class="highlight-image" src="/images/features_corazon.png">
+				</div>
+			</section>
+		</div>
+	</div>
+{/template}
+
+/**
+ *
+ */
+{template .testimonial}
+	<div class="features">
+		<div class="container">
+			<div class="row">
+				<section class="feature">
+					<div class="feature-graphic">
+						<span class="icon-16-bullhorn">1</span>
+					</div>
+					<h3 class="feature-title">The core is separated from the UI</h3>
+					<p class="feature-description">The main idea behind the editor is to fully separate the core from the UI. And not only to separate it, but to allow people to easily add new Buttons and Toolbars or event to create a completely new UI based on a different Framework or even vanilla JavaScript.</p>
+				</section>
+			</div>
+		</div>
+	</div>
+{/template}
+
+/**
+ *
+ */
+{template .footer}
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<p class="footer-description col-md-6 col-md-offset-2">
+					Copyright © 2017 <a href="https://liferay.com">Liferay, Inc</a>
+				</p>
+				<p class="footer-description col-md-6">
+					Powered by <a href="http://wedeploy.com">WeDeploy™</a>
+				</p>
+			</div>
+		</div>
+	</footer>
+{/template}
