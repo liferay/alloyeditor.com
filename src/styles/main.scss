@@ -24,7 +24,7 @@ $accent: #7CC3E1;
 @import "templates/tutorial";
 
 
-.topbar-invert, .content .sidebar-offset .topbar {
+.topbar-invert, .content .sidebar-offset .topbar, .guide:not(.content) .topbar {
 	background-color: $accent;
 
 	.topbar-list .topbar-item {
