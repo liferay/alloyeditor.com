@@ -38,8 +38,9 @@ $accent: #7CC3E1;
 	}
 }
 
-.highlight-title {
-
+.highlight-title [class*='icon-16'] {
+	color: red;
+	font-size: 34px;
 }
 
 .features {
