@@ -14,7 +14,7 @@ weight: 1
 
 <span class="code-header">Example of a new button that converts the current selection into a marquee</span>
 
-```js
+```javascript
 // Use the built-in version of React if your site does not use React
 var React = AlloyEditor.React;
 
@@ -61,7 +61,7 @@ AlloyEditor.Buttons[ButtonMarquee.key] = AlloyEditor.ButtonMarquee = ButtonMarqu
 
 <span class="code-header">Buttons, which handle styles are usually used within the Styles Toolbar, inside a text-like selection</span>
 
-```js
+```javascript
 var toolbars = [
     styles: {
         selections: [{

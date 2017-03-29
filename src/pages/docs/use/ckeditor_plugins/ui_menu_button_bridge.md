@@ -28,7 +28,7 @@ you can paste it into <strong>plugins folder</strong>
   The plugin´s code contains <a alt="code of plugin" href="https://github.com/WebSpellChecker/ckeditor-plugin-scayt/blob/master/plugin.js#L39">this part of code</a>.
 </p>
 
-```js
+```javascript
   editor.ui.add('Scayt', CKEDITOR.UI_MENUBUTTON, {
       label : lang.text_title,
       title : ( editor.plugins.wsc ? editor.lang.wsc.title : lang.text_title ),
@@ -47,7 +47,7 @@ you can paste it into <strong>plugins folder</strong>
   <strong>ae_menubuttonbridge uses ae_uibridge and ae_menubridge AlloyEditor plugins</strong> to work.
 </p>
 
-```js
+```javascript
   AlloyEditor.editable('myContentEditable', {
     extraPlugins: AlloyEditor.Core.ATTRS.extraPlugins.value +
             ',ae_uibridge,ae_menubridge,ae_menubuttonbridge,scayt'
@@ -65,7 +65,7 @@ you can paste it into <strong>plugins folder</strong>
 
 <p>Into the plugin appears this <a alt="Name of buttons" href="https://github.com/WebSpellChecker/ckeditor-plugin-scayt/blob/master/plugin.js#L39">code</a>, we can set toolbar buttons with 'Scayt' button: </p>
 
-```js
+```javascript
    var selections = AlloyEditor.Selections;
 
     selections[3].buttons.push('Scayt');
@@ -84,10 +84,10 @@ you can paste it into <strong>plugins folder</strong>
 ```
 
 <div class="thumbnail">
-  <img class="img img-polaroid" src="<%= @getAssetsUrl() %>/img/guides/ckeditor_ui_menu_button1.png"/>
+  <img class="img img-polaroid" src="/images/guides/ckeditor_ui_menu_button1.png"/>
 </div>
 <div class="thumbnail">
-  <img class="img img-polaroid" src="<%= @getAssetsUrl() %>/img/guides/ckeditor_ui_menu_button2.png"/>
+  <img class="img img-polaroid" src="/images/guides/ckeditor_ui_menu_button2.png"/>
 </div>
 
 </article>

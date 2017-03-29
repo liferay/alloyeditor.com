@@ -26,7 +26,7 @@ you can paste it into <strong>plugins folder</strong>
 
 <p>This button is given by 'undo' CKEDITOR plugin. <a alt="code source of undo plugin" href="https://github.com/ckeditor/ckeditor-dev/blob/master/plugins/undo/plugin.js#L105-L109">It´s code source</a> contains this part of code: </p>
 
-```js
+```javascript
   editor.ui.addButton( 'Undo', {
           label: editor.lang.undo.undo,
           command: 'undo',
@@ -35,7 +35,7 @@ you can paste it into <strong>plugins folder</strong>
 ```
 <p>This plugin uses <strong>editor.ui.addButton</strong>. Also, CKEDITOR plugins can use the following code to add buttons:</p>
 
-```js
+```javascript
   editor.ui.add(name, CKEDITOR.UI_BUTTON, definition)
 ```
 
@@ -49,7 +49,7 @@ you can paste it into <strong>plugins folder</strong>
 
 <p>AlloyEditor provides a plugin that works as an adapter for CKEditor UI features generating compatible buttons</p>
 
-```js
+```javascript
   AlloyEditor.editable('myContentEditable', {
     extraPlugins: AlloyEditor.Core.ATTRS.extraPlugins.value +
       ',ae_buttonbridge,undo'
@@ -65,7 +65,7 @@ you can paste it into <strong>plugins folder</strong>
 
 <p>Following <a alt="toolbar configuration" href="guides/ckeditor_plugins/ui_button">toolbar configuration</a>, we can set toolbar buttons with 'Undo' button: </p>
 
-```js
+```javascript
   var selections = AlloyEditor.Selections;
 
   //index of text toolbar
@@ -84,7 +84,7 @@ you can paste it into <strong>plugins folder</strong>
   });
 ```
 <div class="thumbnail">
-  <img class="img img-polaroid" src="<%= @getAssetsUrl() %>/img/guides/ckeditor_ui_button.png" />
+  <img class="img img-polaroid" src="/images/guides/ckeditor_ui_button.png" />
 </div>
 
 </article>

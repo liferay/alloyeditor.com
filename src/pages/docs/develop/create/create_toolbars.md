@@ -12,7 +12,7 @@ weight: 3
 
 ## Creating a Toolbar
 
-```js
+```javascript
 // Use the built-in version of React if your site does not use React
 var React = AlloyEditor.React;
 
@@ -108,7 +108,7 @@ AlloyEditor.Toolbars[ToolbarVersions.key] = AlloyEditor.ToolbarVersions = Toolba
 
 <p>After creating your toolbar, you have to add it to the configuration of the editor where you want to use it.</p>
 
-```js
+```javascript
 var toolbars = {
     add: {
         buttons: ['image', 'camera', 'hline', 'table'],

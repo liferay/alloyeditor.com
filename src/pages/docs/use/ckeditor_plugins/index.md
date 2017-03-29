@@ -20,7 +20,7 @@ weight: 4
 ## Add the CKEditor plugin
 
 <span>All that's left for you to do is to add the plugin to your editor configuration&#42;</span>
-```js
+```javascript
 // Extend the extraPlugins value adding the new plugins to the default ones
 AlloyEditor.editable('contentEditable', {
 	extraPlugins: AlloyEditor.Core.ATTRS.extraPlugins.value + ',myplugin,myplugindependency'
@@ -41,7 +41,7 @@ AlloyEditor.editable('contentEditable', {
 
 <span class="code-header">For example, you can reuse the <a href="http://ckeditor.com/addon/font">Font Size and Family Plugin</a> like this:.</span>
 
-```js
+```javascript
 var textSelection;
 
 for (var i = 0; i < AlloyEditor.Selections.length; i++) {
@@ -60,7 +60,7 @@ AlloyEditor.editable('contentEditable', {
 ```
 
 <div class="thumbnail">
-	<img class="img img-polaroid" src="<%= @getAssetsUrl() %>/img/guides/ckeditor_plugins.gif">
+	<img class="img img-polaroid" src="/images/guides/ckeditor_plugins.gif">
 </div>
 
 <p>Current existing UI-Bridge plugins are:
@@ -85,7 +85,7 @@ AlloyEditor.editable('contentEditable', {
 ```
 
 <div class="thumbnail">
-	<img class="img img-polaroid" src="<%= @getAssetsUrl() %>/img/guides/ckeditor_moono.gif">
+	<img class="img img-polaroid" src="/images/guides/ckeditor_moono.gif">
 </div>
 
 </article>

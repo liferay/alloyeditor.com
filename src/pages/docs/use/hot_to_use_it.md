@@ -49,7 +49,7 @@ There are a <strong>few ways</strong> to add the editor to the page:
 
 ## Invoke the static editable method of AlloyEditor
 
-```js
+```javascript
 AlloyEditor.editable('myContentEditable');
 ```
 </article>
@@ -58,7 +58,7 @@ AlloyEditor.editable('myContentEditable');
 
 ## Retrieve the content from the editor
 
-```js
+```javascript
 var alloyEditor = AlloyEditor.editable('myContentEditable');
 
 var content = alloyEditor.get('nativeEditor').getData();

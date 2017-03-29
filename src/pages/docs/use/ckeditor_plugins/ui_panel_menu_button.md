@@ -26,7 +26,7 @@ you can paste it into <strong>plugins folder</strong>
 
 <p>This button is given by 'undo' CKEDITOR plugin. <a alt="code source of color button plugin" href="https://github.com/ckeditor/ckeditor-dev/blob/3876e730d418107f791eef517178b0048a2c9383/plugins/colorbutton/plugin.js#L31">It´s code source</a> contains this part of code: </p>
 
-```js
+```javascript
   editor.ui.add( name, CKEDITOR.UI_PANELBUTTON, {
         label: title,
         title: title,
@@ -35,7 +35,7 @@ you can paste it into <strong>plugins folder</strong>
 ```
 <p>This plugin uses <strong>editor.ui.add(name, CKEDITOR.UI_PANELBUTTON)</strong>. Also, CKEDITOR plugins can use the following code to add panel button:</p>
 
-```js
+```javascript
   editor.ui.addPanelMenuButton(name, definition)
 ```
 <p>Both of the ways are correct and it means that we need an AlloyEditor adapter to use this kind of CKEDITOR plugins.</p>
@@ -51,7 +51,7 @@ you can paste it into <strong>plugins folder</strong>
   <strong>ae_panelmenubuttonbridge uses ae_uibridge AlloyEditor plugin</strong> to work.
 </p>
 
-```js
+```javascript
   AlloyEditor.editable('myContentEditable', {
     extraPlugins: AlloyEditor.Core.ATTRS.extraPlugins.value +
       ',ae_uibridge,ae_panelmenubuttonbridge,panel,floatpanel,button,panelbutton,colorbutton'
@@ -69,7 +69,7 @@ you can paste it into <strong>plugins folder</strong>
 
 <p>Into the plugin appears this <a alt="Name of buttons" href="https://github.com/ckeditor/ckeditor-dev/blob/master/plugins/colorbutton/plugin.js#L23,L42">code</a>, we can set toolbar buttons with 'BGColor' and 'TextColor' buttons: </p>
 
-```js
+```javascript
   var selections = AlloyEditor.Selections;
 
     selections[3].buttons.push('BGColor','TextColor');
@@ -87,7 +87,7 @@ you can paste it into <strong>plugins folder</strong>
     });
 ```
 <div class="thumbnail">
-  <img class="img img-polaroid" src="<%= @getAssetsUrl() %>/img/guides/ckeditor_ui_panel_menu_button.png"/>
+  <img class="img img-polaroid" src="/images/guides/ckeditor_ui_panel_menu_button.png"/>
 </div>
 
 </article>

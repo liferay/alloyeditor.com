@@ -44,7 +44,7 @@ title: "Use"
 
 <span class="code-header">Invoke the <code>editable</code> static method on AlloyEditor passing the ID of the node you want to edit</span>
 
-```js
+```javascript
 AlloyEditor.editable('myContentEditable');
 ```
 
