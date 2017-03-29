@@ -23,7 +23,6 @@ $accent: #7CC3E1;
 // Tutorial
 @import "templates/tutorial";
 
-
 .topbar-invert, .content .sidebar-offset .topbar, .guide:not(.content) .topbar {
 	background-color: $accent;
 
@@ -49,7 +48,7 @@ $accent: #7CC3E1;
 
 .header-hero {
 	background-color: $accent;
-	background-image: url("/images/banner_back.png");
+	background-image: url(/images/banner_back.png);
 	background-position: bottom center;
 	background-repeat: no-repeat;
 	background-size: 100%;
@@ -91,11 +90,12 @@ $accent: #7CC3E1;
 	}
 }
 
+.senna-loading-bar {
+	box-shadow: 0 0 4px 3px rgba(0, 0, 0, 0.1);
+}
+
 .container-alloyeditor {
 	background-color: rgba(14, 20, 26, 0.8);
-
-	-moz-box-shadow: 17px 14px 50px 10px rgba(0, 0, 0, 0.1);
-	-webkit-box-shadow: 17px 14px 50px 10px rgba(0, 0, 0, 0.1);
 	box-shadow: 17px 14px 50px 10px rgba(0, 0, 0, 0.1);
 }
 
