@@ -102,6 +102,8 @@ var ToolbarVersions = React.createClass({
 AlloyEditor.Toolbars[ToolbarVersions.key] = AlloyEditor.ToolbarVersions = ToolbarVersions;
 ```
 
+</article>
+
 <article id="article2">
 
 ## Using a Toolbar

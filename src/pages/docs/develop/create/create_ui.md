@@ -6,6 +6,7 @@ weight: 4
 ---
 
 ###### You don't like React? You prefer jQuery? Or you are JavaScript ninja and prefer writing vanilla JS? Welcome on board. You'll see how straightforward it is to create a whole new UI for AlloyEditor.
+
 <article id="article1">
 
 ## Get ready to build AlloyEditor
@@ -26,7 +27,7 @@ weight: 4
 
 ## Create Build
 
-<p>Create a subfolder, called <code>gulp-tasks</code> and a <code>build.js</code> file with your custom build steps. You can check out the [Gulp Project](http://gulpjs.com/) or some of the existing tasks for extra insight into the build system.
+<p>Create a subfolder, called <code>gulp-tasks</code> and a <code>build.js</code> file with your custom build steps. You can check out the [Gulp Project](http://gulpjs.com/) or some of the existing tasks for extra insight into the build system.</p>
 
 </article>
 

@@ -31,10 +31,16 @@ There are a <strong>few ways</strong> to add the editor to the page:
   ```
 
   <span>Add it on the page separating the CKEditor code from AlloyEditor. This is useful if in your project you already use CKEditor.</span>
-  <pre><code><script src="alloy-editor/alloy-editor-no-ckeditor-min.js"></script></code></pre>
+
+  ```html
+  <script src="alloy-editor/alloy-editor-no-ckeditor-min.js"></script>
+  ```
 
   <span>Add it on the page separating the React code from AlloyEditor. This is useful if you already use React in your project.</span>
-  <pre><code><script src="alloy-editor/alloy-editor-no-react-min.js"></script></code></pre>
+
+  ```html
+  <script src="alloy-editor/alloy-editor-no-react-min.js"></script>
+  ```
 
   <span>If you use both React and CKEditor on your page, then just include AlloyEditor's core</span>
   ```html
