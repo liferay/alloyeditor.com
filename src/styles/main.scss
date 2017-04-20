@@ -23,6 +23,9 @@ $accent: #7CC3E1;
 // Tutorial
 @import "templates/tutorial";
 
+// API
+@import "api";
+
 .topbar-invert, .content .sidebar-offset .topbar, .guide:not(.content) .topbar {
 	background-color: $accent;
 
