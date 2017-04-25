@@ -3,7 +3,7 @@ description: "Develop description."
 icon: "code-file"
 layout: "guide"
 title: "Use"
-weight: 2
+weight: 1
 ---
 
 ###### The section below assumes that you are using the default UI, which is built using React. The AlloyEditor core is fully separated from the UI and creating another one based on any other framework is very easy.

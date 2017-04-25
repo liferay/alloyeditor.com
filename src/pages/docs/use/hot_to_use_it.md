@@ -1,8 +1,8 @@
 ---
 description: The section below assumes that you are using the default UI, which is built using React. The AlloyEditor core is fully separated from the UI and creating another one based on any other framework is very easy.
 layout: "guide"
-title: How to use it
-weight: 1
+title: How to use it?
+weight: 2
 ---
 
 ###### The section below assumes that you are using the default UI, which is built using React. The AlloyEditor core is fully separated from the UI and creating another one based on any other framework is very easy.

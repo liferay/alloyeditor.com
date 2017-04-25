@@ -11,8 +11,10 @@ module.exports = {
 			repo: 'alloy-editor',
 			src: [
 				'src/core/**/*.js',
-				'src/plugins/**/*.js',
-				'src/ui/react/src/**/*.js'
+		        'src/plugins/autolink.js',
+		        'src/plugins/drop-images.js',
+		        'src/plugins/placeholder.js',
+        		'ui/react/src/**/*.js*'
 			],
 			user: 'liferay'
 		}

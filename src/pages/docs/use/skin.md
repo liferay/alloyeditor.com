@@ -2,7 +2,7 @@
 description: "Skins in AlloyEditor are a very powerful feature that allows you to seamlessly integrate the editor inside your app."
 layout: "guide"
 title: "Skins"
-weight: 4
+weight: 9
 ---
 
 ###### Skins in AlloyEditor are a very powerful feature that allows you to seamlessly integrate the editor inside your app.
