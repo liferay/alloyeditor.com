@@ -27,7 +27,10 @@ module.exports = {
 		includePaths: ['node_modules', marble.src]
 	},
 	vendorSrc: [
-		'node_modules/marble/build/fonts/**',
+		{
+			dest: 'dist/vendor/fonts',
+			src: 'node_modules/marble/build/fonts/**'
+		},
 		{
 			dest: 'dist/vendor/alloy-editor',
 			src: [
