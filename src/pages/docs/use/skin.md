@@ -66,7 +66,7 @@ weight: 9
   <img class="img img-polaroid" src="/images/guides/skin_atlas.png"/>
 </div>
 
-```html
+```text/html
   <link href="alloy-editor/assets/alloy-editor-atlas-min.css" rel="stylesheet">
 ```
 
@@ -78,7 +78,7 @@ weight: 9
   <img class="img img-polaroid" src="/images/guides/skin_moono.png"/>
 </div>
 
-```html
+```text/html
   <link href="alloy-editor/assets/alloy-editor-moono-min.css" rel="stylesheet">
 ```
 

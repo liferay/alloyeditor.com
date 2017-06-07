@@ -37,7 +37,7 @@ weight: 4
 
 <span class="code-header">In order to build AlloyEditor using your brand new UI (jquery), run</span>
 
-```bash
+```text/x-sh
 gulp --ui jquery
 ```
 

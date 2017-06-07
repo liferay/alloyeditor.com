@@ -25,14 +25,14 @@ weight: 1
 
 <p>If you downloaded the zip file:</p>
 
-```html
+```text/html
 <link href="alloy-editor/assets/alloy-editor-ocean-min.css" rel="stylesheet">
 <script src="alloy-editor/alloy-editor-all-min.js"></script>
 ```
 
 <p>If you downloaded it via Bower:</p>
 
-```html
+```text/html
 <link href="bower_components/alloyeditor/dist/alloy-editor/assets/alloy-editor-ocean-min.css" rel="stylesheet">
 <script src="bower_components/alloyeditor/dist/alloy-editor/alloy-editor-all-min.js"></script>
 ```

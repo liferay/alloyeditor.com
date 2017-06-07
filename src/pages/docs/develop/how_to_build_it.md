@@ -22,7 +22,7 @@ Using your browser, navigate to http://nodejs.org and install NodeJS.
 
 <span class="code-header">Open a terminal on your computer and execute</span>
 
-```bash
+```text/x-sh
 [sudo] npm install -g gulp
 ```
 
@@ -42,7 +42,7 @@ Use the <strong>Fork</strong> button in our <a href="https://github.com/liferay/
 
 <span class="code-header">Navigate to the AlloyEditor project in your computer and execute</span>
 
-```bash
+```text/x-sh
 [sudo] npm install
 ```
 </article>
@@ -53,7 +53,7 @@ Use the <strong>Fork</strong> button in our <a href="https://github.com/liferay/
 
 <span class="code-header">Navigate to the AlloyEditor project in your computer and execute</span>
 
-```bash
+```text/x-sh
 gulp build
 ```
 

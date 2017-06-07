@@ -90,7 +90,7 @@ you can paste it into <strong>plugins folder</strong>
 
 Use the new <strong>moono</strong> skin to close the gap between AlloyEditor default look and feel and CKEditor's.
 
-```html
+```text/html
   <link href="alloy-editor/assets/alloy-editor-moono-min.css" rel="stylesheet">
 ```
 

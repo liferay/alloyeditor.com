@@ -45,7 +45,7 @@ weight: 2
 
 <span class="code-header">Your skin will be automatically picked up when building AlloyEditor:</span>
 
-```bash
+```text/x-sh
 gulp [build]
 ```
 
@@ -57,7 +57,7 @@ gulp [build]
 
 <span class="code-header">Include your skin to the page instead any of the default ones:</span>
 
-```html
+```text/html
 <link href="alloy-editor/assets/alloy-editor-zebra-min.css" rel="stylesheet">
 ```
 

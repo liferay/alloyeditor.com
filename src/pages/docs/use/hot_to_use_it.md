@@ -11,7 +11,7 @@ weight: 2
 
 ## Add AlloyEditor's CSS to the page
 
-```html
+```text/html
 <link href="alloy-editor/assets/alloy-editor-ocean-min.css" rel="stylesheet"></link>
 ```
 
@@ -26,24 +26,24 @@ There are a <strong>few ways</strong> to add the editor to the page:
 <section>
   <span>Add the whole editor with all UI on the page</span>
 
-  ```html
+  ```text/html
   <script src="alloy-editor/alloy-editor-all-min.js"></script>
   ```
 
   <span>Add it on the page separating the CKEditor code from AlloyEditor. This is useful if in your project you already use CKEditor.</span>
 
-  ```html
+  ```text/html
   <script src="alloy-editor/alloy-editor-no-ckeditor-min.js"></script>
   ```
 
   <span>Add it on the page separating the React code from AlloyEditor. This is useful if you already use React in your project.</span>
 
-  ```html
+  ```text/html
   <script src="alloy-editor/alloy-editor-no-react-min.js"></script>
   ```
 
   <span>If you use both React and CKEditor on your page, then just include AlloyEditor's core</span>
-  ```html
+  ```text/html
   <script src="alloy-editor/alloy-editor-core-min.js"></script>
   ```
 </section>
