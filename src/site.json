@@ -1,5 +1,6 @@
 {
 	"title": "alloyeditor.com",
 	"githubRepo": "marcoscv-work/alloyeditor.com",
-	"googleAnalytics": "UA-37033501-5"
+	"googleAnalytics": "UA-37033501-5",
+	"version": "1.4.1"
 }
