@@ -7,18 +7,23 @@ module.exports = {
 	apiConfig: {
 		layout: 'api',
 		project: {
-			refs: ['v1.3.1'],
+			refs: ['1.4.1'],
 			repo: 'alloy-editor',
 			src: [
-				'src/core/**/*.js',
-		        'src/plugins/autolink.js',
-		        'src/plugins/drop-images.js',
-		        'src/plugins/placeholder.js',
-        		'ui/react/src/**/*.js*'
+				'src/core/*.js',
+        		'src/ui/react/src/adapter/*.js',
+        		'src/ui/react/src/components/**/*.js*',
+        		'src/ui/react/src/oop/**/*.js'
 			],
 			user: 'liferay'
 		}
 	},
+	codeMirrorLanguages: [
+		'xml',
+		'css',
+		'javascript',
+		'shell'
+	],
 	entryPoints: {
 		electricAPI: path.join(__dirname, 'src/partials/ElectricAPI.js')
 	},
