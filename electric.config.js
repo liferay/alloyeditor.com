@@ -24,9 +24,6 @@ module.exports = {
 		'javascript',
 		'shell'
 	],
-	deployOptions: {
-		branch: 'gh-pages'
-	},
 	entryPoints: {
 		electricAPI: path.join(__dirname, 'src/partials/ElectricAPI.js')
 	},
