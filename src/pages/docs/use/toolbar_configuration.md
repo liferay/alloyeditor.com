@@ -116,7 +116,7 @@ var Selections = [{
 ```javascript
 var toolbars = {
     add: {
-        buttons: ['table', 'hline', image', 'camera'],
+        buttons: ['table', 'hline', 'image', 'camera'],
         tabIndex: 2
     }
 };
