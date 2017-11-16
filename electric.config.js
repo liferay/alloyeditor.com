@@ -7,7 +7,7 @@ module.exports = {
 	apiConfig: {
 		layout: 'api',
 		project: {
-			refs: ['1.4.1'],
+			refs: ['1.5.0'],
 			repo: 'alloy-editor',
 			src: [
 				'src/core/*.js',
