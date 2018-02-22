@@ -1,5 +1,5 @@
 ---
-description: AlloyEditor might be set to work in "read only" mode. In read only mode, changing the content will be not possible and clicking on a link will navigate to its URL instead to open a dialog for editing it.
+description: AlloyEditor might be set to work in `read only` mode. In read only mode, changing the content will be not possible and clicking on a link will navigate to its URL instead to open a dialog for editing it.
 layout: guide
 title: Read only mode
 weight: 8
