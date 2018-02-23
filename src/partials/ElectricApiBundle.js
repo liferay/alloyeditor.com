@@ -5,9 +5,14 @@ import Component from 'metal-component';
 import dom from 'metal-dom';
 import Toggler from 'metal-toggler';
 import {ElectricAPIAutocomplete} from 'electric-marble-components';
+import {isServerSide} from 'metal';
 
-class ElectricApi extends Component {
+class ElectricApiBundle extends Component {
 	attached() {
+		if (isServerSide()) {
+			return;
+		}
+
 		const {project} = this;
 
 		this.autocomplete_ = new ElectricAPIAutocomplete({
@@ -31,6 +36,10 @@ class ElectricApi extends Component {
 	}
 
 	disposed() {
+		if (isServerSide()) {
+			return;
+		}
+
 		this.docClickHandler_.removeListener();
 		this.dropdowns_.dispose();
 		this.toggler_.dispose();
@@ -47,9 +56,9 @@ class ElectricApi extends Component {
 	}
 }
 
-ElectricApi.STATE = {
+ElectricApiBundle.STATE = {
 	project: {
 	}
 };
 
-export default ElectricApi;
+export default ElectricApiBundle;
