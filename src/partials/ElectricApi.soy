@@ -7,7 +7,7 @@
  */
 {template .render}
 	<div class="api docs">
-		<script src="/js/bundles/ElectricApi.js"></script>
+		<script src="/js/bundles/electricApi.js"></script>
 
 		{call topbar.render data="all"}
 			{param elementClasses: 'topbar-docs-main' /}
@@ -52,9 +52,9 @@
 		<script type="text/javascript">
 			window.electricPageComponent = new pageComponent.default({lb}
 				project: {lb}
-					ref: {$project.ref},
-					repo: {$project.repo},
-					user: {$project.user}
+					ref: '{$project.ref}',
+					repo: '{$project.repo}',
+					user: '{$project.user}'
 				{rb}
 			{rb});
 		</script>

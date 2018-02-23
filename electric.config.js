@@ -25,7 +25,7 @@ module.exports = {
 		'shell'
 	],
 	entryPoints: {
-		electricAPI: path.join(__dirname, 'src/partials/ElectricAPI.js')
+		electricAPI: path.join(__dirname, 'src/partials/ElectricAPIBundle.js')
 	},
 	metalComponents: ['electric-marble-components'],
 	sassOptions: {
