@@ -36,7 +36,7 @@ weight: 5
 ## ReadOnly Configuration
 
 <p>
-	Changing editor´s behavior. ReadOnly is a property that it allows you enable or disable AlloyEditor.
+	Changing editor's behavior. ReadOnly is a property that it allows you enable or disable AlloyEditor.
 </p>
 
 <p><i>Please, check our <a href="/docs/use/readonly_configuration.html">ReadOnly Configuration</a>!</i></p>
