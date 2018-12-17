@@ -26,6 +26,10 @@ var toolbars = {
     tabIndex: 1
   }
 };
+
+...
+
+AlloyEditor.editable('MyEditable', {toolbars: toolbars});
 ```
 <p>
   where <code>AlloyEditor.Selections</code> is
